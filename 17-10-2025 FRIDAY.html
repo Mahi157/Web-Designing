@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color: red
+            ;}
+        form{background-color: Yellow;}
+        label{
+            width: 100px;
+            display:inline-block;
+        }
+    </style>
+</head>
+<body>
+    <table border="2">
+         <tr>
+                   <th rowspan="3">class</th>
+                   <th colspan="2" >name</th>
+                   <th >roll.no</th>
+         </tr>
+
+         <tr>
+            <td >cse 20</td>
+            <td >Suhani</td>
+            <td >001</td>
+        </tr>
+
+        <tr>
+            <td >cse 20</td>
+            <td>Ram</td>
+            <td>002</td>
+        </tr>
+
+    </table>
+
+    <form>
+        <input type="submit" ><br>
+        <input type="button" value="login">
+        <input type="reset">
+    </form>
+    <form>
+        <fieldset>
+            <legend> Log in Page</legend>
+        USER ID: &nbsp; &nbsp; &nbsp; <input type="text" autofocus required action="#" method="post" maxlength="13" size="13" placeholder="Enter your User Id"><br>
+        PASSWORD:<input type="text" placeholder="Enter your Password "  required maxlength="8" size="13"  ><br>
+        <input type="submit" >
+       
+        <input type="reset">
+    </fieldset>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form><fieldset><legend>My Detail Page</legend>
+      <label> Name:<input type="text" name="sname"><br>
+        <label> Father Name:<input type="text" name="fname"><br>
+            <label>  Mother Name:<input type="text" name="mname"><br>
+                <label> Contact No.:<input type="text" name="contact"><br>
+                    <label> Email id:<input type="email" name="email"><br>
+                        <label> Date of Birth:<input type="date" name="dob"><br>
+                            <label> Gender:<input type="radio" name="Gender">Male
+       <input type="radio" name="Gender">Female<br>
+      <label> Hobbies:<input type="checkbox" name="hobbies">Reading
+      <input type="checkbox" name="hobbies">Travelling
+      <input type="checkbox" name="hobbies">Cricket<br>
+      <label> Address:<textarea></textarea><br>
+        <label> Course</label> 
+<select>
+    <option>Select Courses</option>
+    <option>M.Tech</option>
+    <option>B.Tech</option>
+    <option>MBA</option>
+    <option>MCA</option>
+</select><br>
+  <input type="submit">
+  <input type="reset">
+      </fieldset>
+    </form>
+</body>
+</html>
+
