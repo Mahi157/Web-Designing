@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Menu Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f8ff; /* Light blue-white background */
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .menu-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: normal;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .menu-grid {
+            display: grid;
+            /* Define 4 equal columns */
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px; /* Space between buttons */
+            padding: 20px;
+        }
+
+        .menu-item {
+            padding: 20px 10px;
+            border: 2px solid;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s, border-color 0.3s;
+            cursor: pointer;
+            display: flex; /* Centers text vertically and horizontally */
+            justify-content: center;
+            align-items: center;
+            height: 50px; /* Ensures all button boxes are the same height */
+        }
+
+        /* Styling for the first row of buttons (Blueish/Purple border) */
+        .primary-menu {
+            border-color: #c9c9e8; /* Light purple/blue border */
+            background-color: #f0f0ff;
+        }
+
+        .primary-menu:hover {
+            background-color: #e0e0ff;
+        }
+
+        /* Styling for the second row of buttons (Greenish border) */
+        .secondary-menu {
+            border-color: #a8d5b1; /* Light green border */
+            background-color: #f0fff0;
+        }
+
+        .secondary-menu:hover {
+            background-color: #e0ffe0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu-title">
+            <span>My Travel</span> &nbsp;&nbsp;&nbsp; <span>Demo</span> &nbsp;&nbsp;&nbsp; <span>Menu</span>
+        </div>
+
+        <div class="menu-grid">
+            <a href="#" class="menu-item primary-menu">Home</a>
+            <a href="#" class="menu-item primary-menu">Plans</a>
+            <a href="#" class="menu-item primary-menu" style="border-color: #5d5dff; background-color: #e3e3ff;">Offers</a> 
+            <a href="#" class="menu-item primary-menu">Gallery</a>
+
+            <a href="#" class="menu-item secondary-menu">Account</a>
+            <a href="#" class="menu-item secondary-menu">Flight</a>
+            <a href="#" class="menu-item secondary-menu">Bagage</a>
+            <a href="#" class="menu-item secondary-menu">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
